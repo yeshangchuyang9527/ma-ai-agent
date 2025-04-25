@@ -7,5 +7,5 @@ package com.mahaoyang.maaiagent.demo.invoke;
  */
 public interface TestApiKey {
 
-    String API_KEY = "sk-ac5c9886ca994b38ba4fed8948a62dda";
+    String API_KEY = "VOLCENGINE_ACCESS_KEY_ID";
 }

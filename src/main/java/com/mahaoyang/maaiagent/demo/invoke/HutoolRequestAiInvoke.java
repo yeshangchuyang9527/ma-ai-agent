@@ -13,7 +13,7 @@ public class HutoolRequestAiInvoke {
         String url = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation";
 
         // API Key
-        String apiKey = "sk-ac5c9886ca994b38ba4fed8948a62dda";
+        String apiKey = "sk-VOLCENGINE_ACCESS_KEY_ID";
 
         // 请求体数据
         String body = JSONUtil.createObj()
