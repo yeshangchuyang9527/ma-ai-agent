@@ -6,10 +6,29 @@ spring:
     location: classpath:txt/banner.txt
   profiles:
     active: local
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ma_ai_agent
+    username: peppa
+    password: peppa
   server:
     port: 8123
     servlet:
       context-path: /api
+  data:
+    redis:
+      port: 6379
+      database: 0
+      host: localhost
+      password: 123456
+      timeout: 10000
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
+        test-on-borrow: true
 # springdoc-openapi 接口文档配置
 springdoc:
   swagger-ui:
@@ -27,3 +46,6 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor: debug

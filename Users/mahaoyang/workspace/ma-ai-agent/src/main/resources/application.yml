@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ma-ai-agent
+    version: 1.0.0
+  banner:
+    location: classpath:txt/banner.txt
+  profiles:
+    active: local
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ma_ai_agent?useSSL=false&serverTimezone=UTC
+    username: peppa
+    password: peppa
+  server:
+    port: 8123
+    servlet:
+      context-path: /api
